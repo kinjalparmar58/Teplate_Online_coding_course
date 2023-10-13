@@ -1,44 +1,76 @@
 header{
     color:beige;
-    background-color: cornflowerblue;
+    background-image: url('/icons/CoverImg.jpg');
+    height: 100vh;
+    background-color: rgba(61, 60, 60, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size:  medium;
     position: sticky;
+}
+nav{
+    position: fixed;
 }
 .logo {
     font-size: 50px;
     font-weight:900;
     font-family: Arial, sans-serif;
-    color: #017cf7; /* Blue color */
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(12, 9, 9, 0.2);
-    padding-left: 10px;
+    color:#f0f0f0;
+    text-shadow: 2px 2px 5px rgba(54, 53, 53, 0.4);
+    /* padding-left: 10px; */
     align-items:self-end;
 }
+.logo:hover{
+    color: #f0f0f0;
+    text-shadow: 2px 2px 5px 0.5px;
+}
+a:hover{
+    text-decoration: none;
+}
+.myBtn:hover{
+    color: #a8a4a4;
+    background-color: #0f0f0f;
+}
+#Nav{
+    padding: 10px; 
+    margin-right: 10px;
+    color: #f0f0f0;
+    font-weight: 500;
+    border-radius: 25px 25px 25px 25px;
+    height: max-content;
+    width: max-content;
+    transition: background-color 0.3s; 
+}
 
-.header-image{
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#Nav:hover{
+    background-color:  #4b4b49;
+}
+#link{
+    color: #fff7f7;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+#link:hover{
+    color:#504f4f; 
 }
 .header{
     width: 80%; 
     margin: 0 auto;
-    text-align: left;
-    width: 90%; 
+    text-align: right;
+    width: 100%; 
+    font-weight:500;
+    padding-right: 10%;
     padding-bottom: 15%;
 }
 .myBtn{
     background-color: #4b4949; 
     padding: 10px; 
+    margin-right: 10px;
     color: #f0f0f0;
     border-radius: 25px 25px 25px 25px;
-    height: min-content;
-    width: min-content;
+    height: max-content;
+    width: max-content;
 }
 .pruductDiv{
     margin-bottom:3% ;
@@ -56,18 +88,7 @@ header{
     border-radius: 24px 24px 24px 24px;
     background-color: #4b4949;
 }
-img{
-    margin-top: 25% ;
-    height: 100px;
-    width: 100px;
-    padding-bottom: 25%;
-    opacity: 40%;
-}
-.container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
+
 
 .reviewimg{
     border-radius: 6px 6px 6px 6px;
@@ -113,7 +134,8 @@ li{
     list-style: none;
 }
 body {
-    background-color: #f0f0f0; 
-    /* height: 100vh; */
+    /* background-color: #f0f0f0;  */
+    height: 100vh;
+ 
     margin: 0;
 }
